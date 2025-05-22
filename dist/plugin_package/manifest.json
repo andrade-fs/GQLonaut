@@ -1,0 +1,31 @@
+{
+  "id": "frontend-vue",
+  "name": "GQLonaut",
+  "version": "0.0.1",
+  "description": "GQLonaut helps you discover and explore GraphQL schemas via introspection, directly from Caido.",
+  "author": {
+    "name": "Andrade-fs",
+    "email": "andradefs@proton.me",
+    "url": "https://andrade-fs.github.io"
+  },
+  "links": {},
+  "plugins": [
+    {
+      "id": "backend",
+      "kind": "backend",
+      "name": "backend",
+      "entrypoint": "backend/index.js",
+      "runtime": "javascript"
+    },
+    {
+      "id": "frontend",
+      "kind": "frontend",
+      "name": "frontend",
+      "entrypoint": "frontend/index.js",
+      "style": "frontend/index.css",
+      "backend": {
+        "id": "backend"
+      }
+    }
+  ]
+}
